@@ -20,4 +20,16 @@
 	return self;
 }
 
+- (BOOL)isEqual:(Company*)company
+{
+	if (![_name isEqualToString:company.name]) {
+		return NO;
+	}
+	
+	if (![_address isEqualToString:company.address]) {
+		return NO;
+	}
+	return YES;
+}
+
 @end

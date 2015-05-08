@@ -32,7 +32,7 @@
 	}
 	// Else it is an array of objects
 	else if([jsonObject isKindOfClass:[NSArray class]]){
-		newObject = [NSObject arrayOfType:nil array:jsonObject];
+		newObject = [NSObject arrayOfType:objectClass array:jsonObject];
 	}
 	
 	return newObject;

@@ -40,6 +40,7 @@
 
 - (void)testDeserialization
 {
+	// Json to Object
 	Person *person = [[Person alloc] init];
 	person.name = @"Avigit";
 	Company *company1 = [[Company alloc] initWithName:@"GB" address:@"Research Dr"];
@@ -50,14 +51,22 @@
 	NSLog(@"%@", json);
 	
 	Person *person2 = [[Person alloc] initWithJSONData:[json dataUsingEncoding:NSUTF8StringEncoding]];
+	XCTAssertTrue([person isEqual:person2]);
 	
+	// Json to array
 	json = @"[\"Blue\", \"Yellow\"]";
 	
 	NSArray *array = [NSObject arrayOfClass:nil JSONData:[json dataUsingEncoding:NSUTF8StringEncoding]];
+	XCTAssertTrue(([array[0] isEqualToString:@"Blue"] && [array[1] isEqualToString:@"Yellow"]));
 	
-	XCTAssertTrue([person.name isEqualToString:@"Avigit"], @"");
-//	XCTAssertTrue([person.company.name isEqualToString:@"iQmetrix"], @"");
-//	XCTAssertTrue([person.company.address isEqualToString:@"Cornowall"], @"");
+	person2.name = @"No Name";
+	array = @[person, person2];
+	json = [array JSONString];
+	NSLog(@"%@", json);
+	NSArray *resultArray = [NSObject arrayOfClass:[Person class] JSONData:[json dataUsingEncoding:NSUTF8StringEncoding]];
+	
+	XCTAssertTrue([array isEqualToArray:resultArray]);
+	XCTAssertTrue(([array[0] isEqual:person] && [array[1] isEqual:person2]));
 }
 
 @end
