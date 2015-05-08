@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90D5D9131AFD40E9007DDABF /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 90D5D9121AFD40E9007DDABF /* Test.json */; };
 		90FB27C81AFAC1EE004CF560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB27C71AFAC1EE004CF560 /* main.m */; };
 		90FB27CB1AFAC1EE004CF560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB27CA1AFAC1EE004CF560 /* AppDelegate.m */; };
 		90FB27CE1AFAC1EE004CF560 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB27CD1AFAC1EE004CF560 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		90FB27D31AFAC1EE004CF560 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FB27D21AFAC1EE004CF560 /* Images.xcassets */; };
 		90FB27D61AFAC1EE004CF560 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FB27D41AFAC1EE004CF560 /* LaunchScreen.xib */; };
 		90FB27E21AFAC1EE004CF560 /* JSONSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB27E11AFAC1EE004CF560 /* JSONSerializationTests.m */; };
+		90FB27ED1AFAC26B004CF560 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB27EC1AFAC26B004CF560 /* Person.m */; };
+		90FF49B21AFBDDCA00F207D4 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FF49B11AFBDDCA00F207D4 /* Company.m */; };
+		90FF49B51AFBFE0200F207D4 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FF49B41AFBFE0200F207D4 /* NSObject+JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90D5D9121AFD40E9007DDABF /* Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 		90FB27C21AFAC1EE004CF560 /* JSONSerialization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONSerialization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FB27C61AFAC1EE004CF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90FB27C71AFAC1EE004CF560 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,13 @@
 		90FB27DB1AFAC1EE004CF560 /* JSONSerializationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONSerializationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FB27E01AFAC1EE004CF560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90FB27E11AFAC1EE004CF560 /* JSONSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONSerializationTests.m; sourceTree = "<group>"; };
+		90FB27EB1AFAC26B004CF560 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		90FB27EC1AFAC26B004CF560 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		90FB27F11AFAC584004CF560 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		90FF49B01AFBDDCA00F207D4 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		90FF49B11AFBDDCA00F207D4 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		90FF49B31AFBFE0200F207D4 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		90FF49B41AFBFE0200F207D4 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 		90FB27C41AFAC1EE004CF560 /* JSONSerialization */ = {
 			isa = PBXGroup;
 			children = (
+				90FF49B31AFBFE0200F207D4 /* NSObject+JSON.h */,
+				90FF49B41AFBFE0200F207D4 /* NSObject+JSON.m */,
 				90FB27C91AFAC1EE004CF560 /* AppDelegate.h */,
 				90FB27CA1AFAC1EE004CF560 /* AppDelegate.m */,
 				90FB27CC1AFAC1EE004CF560 /* ViewController.h */,
@@ -89,6 +103,10 @@
 				90FB27D21AFAC1EE004CF560 /* Images.xcassets */,
 				90FB27D41AFAC1EE004CF560 /* LaunchScreen.xib */,
 				90FB27C51AFAC1EE004CF560 /* Supporting Files */,
+				90FB27EB1AFAC26B004CF560 /* Person.h */,
+				90FB27EC1AFAC26B004CF560 /* Person.m */,
+				90FF49B01AFBDDCA00F207D4 /* Company.h */,
+				90FF49B11AFBDDCA00F207D4 /* Company.m */,
 			);
 			path = JSONSerialization;
 			sourceTree = "<group>";
@@ -98,6 +116,7 @@
 			children = (
 				90FB27C61AFAC1EE004CF560 /* Info.plist */,
 				90FB27C71AFAC1EE004CF560 /* main.m */,
+				90FB27F11AFAC584004CF560 /* Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 			children = (
 				90FB27E11AFAC1EE004CF560 /* JSONSerializationTests.m */,
 				90FB27DF1AFAC1EE004CF560 /* Supporting Files */,
+				90D5D9121AFD40E9007DDABF /* Test.json */,
 			);
 			path = JSONSerializationTests;
 			sourceTree = "<group>";
@@ -209,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D5D9131AFD40E9007DDABF /* Test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FF49B21AFBDDCA00F207D4 /* Company.m in Sources */,
 				90FB27CE1AFAC1EE004CF560 /* ViewController.m in Sources */,
 				90FB27CB1AFAC1EE004CF560 /* AppDelegate.m in Sources */,
+				90FB27ED1AFAC26B004CF560 /* Person.m in Sources */,
 				90FB27C81AFAC1EE004CF560 /* main.m in Sources */,
+				90FF49B51AFBFE0200F207D4 /* NSObject+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/avigit.saha/Projects/JSONSerialization/JSONSerialization/Prefix.pch;
 				INFOPLIST_FILE = JSONSerialization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/avigit.saha/Projects/JSONSerialization/JSONSerialization/Prefix.pch;
 				INFOPLIST_FILE = JSONSerialization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,6 +399,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = /Users/avigit.saha/Projects/JSONSerialization/JSONSerialization/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -392,6 +419,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = /Users/avigit.saha/Projects/JSONSerialization/JSONSerialization/Prefix.pch;
 				INFOPLIST_FILE = JSONSerializationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +446,7 @@
 				90FB27E71AFAC1EE004CF560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90FB27E81AFAC1EE004CF560 /* Build configuration list for PBXNativeTarget "JSONSerializationTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +455,7 @@
 				90FB27EA1AFAC1EE004CF560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
