@@ -28,6 +28,16 @@
 - (instancetype)initWithJSONData:(NSData *)data;
 
 /**
+ *  Init an object with json data
+ *
+ *  @param dict JSON data in NSDictionary format
+ *
+ *  @return return an instance of object populated with the json data
+ */
+
+- (instancetype)initWithJSONDictionary:(NSDictionary *)dict;
+
+/**
  *  It takes a JSON array and returns a NSArray object from the json data
  *
  *  @param objectClass Array will contain objects of this clas

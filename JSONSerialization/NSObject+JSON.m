@@ -15,6 +15,11 @@
 	return [NSObject objectOfClass:[self class] fromJSONData:data];
 }
 
+- (instancetype)initWithJSONDictionary:(NSDictionary *)dict
+{
+	return [NSObject objectOfClass:[self class] fromJSON:dict];
+}
+
 + (NSArray *)arrayOfClass:(Class)className JSONData:(NSData *)data {
 	return [NSObject objectOfClass:className fromJSONData:data];
 }
